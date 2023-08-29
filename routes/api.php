@@ -19,4 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('cards', [CardController::class,'index']);
+Route::get('/cards', [CardController::class,'index']);

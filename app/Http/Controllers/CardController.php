@@ -17,16 +17,16 @@ class CardController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(): View
-    {
-        
-        $cards = Card::all();
-        $formAddNewCards = FormAddNewCard::latest()->get();
-        
-        return view('cards', compact('cards', 'formAddNewCards'));    
-    }
+   // public function index(): View
+   // {
 
-    
+     //   $cards = Card::all();
+     //   $formAddNewCards = FormAddNewCard::latest()->get();
+
+      //  return view('cards', compact('cards', 'formAddNewCards'));
+   // }
+
+
     /**
      * Show the form for creating a new resource.
      *
